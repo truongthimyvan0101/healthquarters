@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Ultralight.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Ultrabold.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Ultrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Semibold.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Black.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Light.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Bold.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assect/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assect/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.w-header .navbar a{
+    width: 15%;
+}
+.w-header .navbar img{
+    width: 100%;
+}
+.w-header .navbar .list-item{
+    list-style-type: none;
+}
+.w-header .navbar .list-item .item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.w-header .navbar .list-item .item .btn{
+    color: #0b2e59;
+    border-color: #0b2e59;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 2.25rem;
+    padding: 0.5rem 2rem;
+}
+.w-header .navbar .list-item .dropdown .dropdown-menu{
+    min-width: 7rem;
+}
+.w-header .navbar .list-item .dropdown .dropdown-menu a{
+    color: #c25a3f;
+}
+.w-header .navbar .list-item .item .btn:hover {
+    color: #fff;
+    background-color: #0b2e59;
+    border-color: #0b2e59;
+}
+/* CSS w-design */
+.w-design .slide  .design .left h1{
+    font-family: 'Hatton', sans-serif;
+}
+.w-design .slide .design img{
+    max-width: 50%;
+}
+/* CSS mobile */
+@media(max-width: 541px){
+    .w-header .navbar{
+        margin: 0 !important;
+    }
+    .w-header .navbar a{
+        width: 40%;
+    }
+    .w-header .navbar img{
+        width: 100%;
+    }
+    .w-design{
+        display: none;
+    }
+     /* --icon menu- */
+    .menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu .menu-bar1,
+.menu .menu-bar3 {
+    width: 40px;
+    height: 2px;
+    background-color: #212529;
+    transition: 0.4s;
+    margin: 1rem 0;
+}
+
+.menu .menu-bar2 {
+
+    width: 25px;
+    height: 2px;
+    background-color: #212529;
+}
+
+.menu.active .menu-bar1 {
+    transform: rotate(-45deg) translate(-0.5em, 0.6em);
+    margin: 1.3rem 0;
+}
+
+.menu.active .menu-bar2 {
+    display: none;
+}
+
+.menu.active .menu-bar3 {
+    margin: 1.3rem 0;
+    transform: rotate(45deg) translate(-0.46em, -0.6em);
+}
+    
+    /* --- */
+    .w-header .social .list-item{
+        position: absolute;
+        height: 90vh;
+        left: 0;
+        width: 100% !important;
+        background-color: white;
+        z-index: 999;
+        display: none;
+        top: 11%;
+    }
+    .w-header .social .list-item a{
+        color: black;
+    }
+    .w-header .social .list-item i{
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    .w-header .social .list-item .item-social{
+        border-bottom: 1px solid rgb(112, 109, 109);
+    }
+    .w-header .social .list-item .item-social a{
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .w-header .social .list-item .nav-item .dropdown-menu{
+        position: absolute;
+        transform: translate3d(5px, 61px, 0px);
+        top: 0px;
+        left: 42% !important;
+        will-change: transform;
+    }
+    .w-header .social .list-item .design-list .dropdown .dropdown-item a{
+        color: #c25a3f;
+    }
+    /* .w-header .social .list-item .nav-item .dropdown-toggle::after {
+        margin-left: 17rem !important;
+    } */
+    .w-header .social .list-item{
+        overflow: hidden;
+    }
+    .w-header .social .list-item .item-social .dropdown{
+        display: none;
+    }
+    .w-header .social .list-item .show{
+        display: block;
+    }
+    .w-header .social .list-item li a{
+        padding: 1rem 1.5rem;
+        color: black;
+        font-weight: 500;
+        display: block;
+    }
+    .w-header .social .list-item .item {
+        margin-top: 1rem;
+    }
+    .w-header .social .list-item .item .btn{
+        color: #0b2e59;
+        border-color: #0b2e59;
+        background-color: #fff;
+        font-weight: 600;
+        border-radius: 2.25rem;
+        padding: 0.5rem 2rem;
+    }
+    .w-header .social .list-item .item .btn:hover{
+        color: #fff;
+        border-color: #0b2e59;
+        background-color: #0b2e59;
+        font-weight: 600;
+        border-radius: 2.25rem;
+        padding: 0.5rem 2rem;
+    }
+}
