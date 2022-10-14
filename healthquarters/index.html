@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/libs/icons-1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/libs/slick/slick.css">
+    <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="/libs/sal-master/sal-master/dist/sal.css">
     <!-- <link rel="stylesheet" href="/libs/fullPage.js-master/fullPage.js-master/dist/fullpage.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="w-header">
-        <nav id="header" class="navbar mx-5 py-3">
+        <nav id="header" class="navbar justify-content-between align-items-center mx-5 py-3">
             <a class="navbar-brand" href="#">
                 <img src="/assect/img/5fe9aa9dd68386b694141d50_HQ Logo Wide.svg" alt="">
             </a>                                                        
             <ul class="list-item d-lg-flex d-none justify-content-between align-items-center mb-0">
                 <li class="item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link d-flex" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         About
+                        <i class="bi bi-chevron-compact-down"></i>
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">About us</a>
@@ -29,31 +32,31 @@
                     </div>
                 </li>
                 <li class="item mr-3">
-                    <a href="#">Location</a>
+                    <a class="nav-link" href="#">Location</a>
                 </li>
                 <li class="item mr-3">
-                    <a href="#">For providers</a>
+                    <a class="nav-link" href="#">Forproviders</a>
                 </li>
                 <li class="item mr-3">
-                    <a href="#">Bog</a>
+                    <a class="nav-link" href="#">Bog</a>
                 </li>
-                <li class="item">
+                <li class="item-nav">
                     <button type="button" class="btn">Plan your visit</button>
                 </li>
             </ul>
             <div class="menu-nav d-lg-none d-flex align-items-center">
                 <div class="menu ">
-                  <div class="menu-bar menu-bar1"></div>
-                  <div class="menu-bar menu-bar2"></div>
-                  <div class="menu-bar menu-bar3"></div>
+                  <div class="menu-bar1"></div>
+                  <div class="menu-bar2"></div>
+                  <div class="menu-bar3"></div>
                 </div>
               </div>
             </div>
         </nav>
-        <div class="social d-lg-none d-bock">
+        <div class="social d-lg-none d-bock text-center">
             <ul class="list-item p-0">
                 <li class="item-social design-list">
-                    <a href="#" class="navlink d-flex justify-content-between">About<i class="bi bi-chevron-compact-right"></i></a>
+                    <a href="#" class="navlink">About<i class="bi bi-chevron-compact-down"></i></a>
                     <ul class="dropdown p-0">
                       <li class="dropdown-item p-0">
                         <a href="#">About us</a>
@@ -81,9 +84,9 @@
             </ul>
         </div>
     </header>
-    <div class="w-design">
-        <div class="slide">
-            <div class="design d-flex justify-content-between mx-5 ">
+    <section class="w-design">
+        <div class="bannerSlider">
+            <div class="slide d-flex justify-content-between">
                 <div class="left">
                     <h1>The new headquarters for your health</h1>
                     <p>HealthQuarters brings together trusted clinicians,
@@ -94,80 +97,67 @@
                         starting your health journey, our team is here 
                         for you across our growing network of locations.
                     </p>
+                    <div class="contact d-flex mt-3">
+                        <button type="button" class="btn">Learn More</button>
+                        <p>or</p>
+                        <div class="context">
+                            <h6>Call us at</h6>
+                            <p>(212) 432-5847</p>
+                        </div>
+                    </div>
                 </div>
                 <img class="img-fluid" src="/assect/img/6036d4b1761e92dc462f1ba7_Health-Quarters_Exteriors_005__1614037006_193.107.176.172.jpg" alt="">
             </div>
-        </div>
-        <div class="slide">
-            <div class="design d-flex justify-content-between mx-5 ">
-            <div class="left">
-                <h1>The new headquarters for your health</h1>
-                <p>HealthQuarters brings together trusted clinicians,
-                    wellness practitioners, and brands so you can
-                    meet your needs for long-term health–all in one 
-                    place.Whether you’re looking to bring more
-                    preventive care into everyday life or just 
-                    starting your health journey, our team is here 
-                    for you across our growing network of locations.
-                </p>
-            </div>
-            <img class="img-fluid" src="/assect/img/6036d4b1761e92dc462f1ba7_Health-Quarters_Exteriors_005__1614037006_193.107.176.172.jpg" alt="">
-            </div>
-        </div>
-        <div class="slide">
-            <div class="design d-flex justify-content-between mx-5 ">
-            <div class="left">
-                <h1>The new headquarters for your health</h1>
-                <p>HealthQuarters brings together trusted clinicians,
-                    wellness practitioners, and brands so you can
-                    meet your needs for long-term health–all in one 
-                    place.Whether you’re looking to bring more
-                    preventive care into everyday life or just 
-                    starting your health journey, our team is here 
-                    for you across our growing network of locations.
-                </p>
-            </div>
-            <img class="img-fluid" src="/assect/img/6036d4b1761e92dc462f1ba7_Health-Quarters_Exteriors_005__1614037006_193.107.176.172.jpg" alt="">
-            </div>
-        </div>
-        <!-- <div class="section">
-            <div class="design d-flex justify-content-between mx-5 ">
+            <div class="slide d-flex justify-content-between">
                 <div class="left">
-                    <h1>The new headquarters for your health</h1>
-                    <p>HealthQuarters brings together trusted clinicians,
-                        wellness practitioners, and brands so you can
-                        meet your needs for long-term health–all in one 
-                        place.Whether you’re looking to bring more
-                        preventive care into everyday life or just 
-                        starting your health journey, our team is here 
-                        for you across our growing network of locations.
+                    <h1>Meet Mt. Sinai Doctors</h1>
+                    <p>From basic care like immunizations
+                         and checkups to care from top specialists,
+                          your Mount Sinai Doctors physician will help
+                           you get the treatment and services you need,
+                            quickly, easily, and stress-free.
                     </p>
+                    <div class="contact d-flex mt-3">
+                        <button type="button" class="btn">Learn More</button>
+                        <p>or</p>
+                        <div class="context">
+                            <h6>Call us at</h6>
+                            <p>(212) 432-5847</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-fluid" src="/assect/img/6036d4b1761e92dc462f1ba7_Health-Quarters_Exteriors_005__1614037006_193.107.176.172.jpg" alt="">
+                
+            </div>
+            <div class="slide d-flex justify-content-between">
+                <div class="left">
+                    <h1>Our Williamsburg Flagship is Coming Soon</h1>
+                    <p>HealthQuarters brings together trusted clinicians,
+                         wellness practitioners, and brands so you can meet 
+                         your needs for long-term health–all in one place.Whether 
+                         you’re looking to bring more preventive care into everyday 
+                         life or just starting your health journey, our team is here 
+                         for you across our growing network of locations.
+                    </p>
+                    <div class="contact d-flex mt-3">
+                        <button type="button" class="btn">Learn More</button>
+                        <p>or</p>
+                        <div class="context">
+                            <h6>Call us at</h6>
+                            <p>(212) 432-5847</p>
+                        </div>
+                    </div>
                 </div>
                 <img class="img-fluid" src="/assect/img/6036d4b1761e92dc462f1ba7_Health-Quarters_Exteriors_005__1614037006_193.107.176.172.jpg" alt="">
             </div>
         </div>
-        <div class="section">
-            <div class="design d-flex justify-content-between mx-5 ">
-                <div class="left">
-                    <h1>The new headquarters for your health</h1>
-                    <p>HealthQuarters brings together trusted clinicians,
-                        wellness practitioners, and brands so you can
-                        meet your needs for long-term health–all in one 
-                        place.Whether you’re looking to bring more
-                        preventive care into everyday life or just 
-                        starting your health journey, our team is here 
-                        for you across our growing network of locations.
-                    </p>
-                </div>
-                <img class="img-fluid" src="/assect/img/6036d4b1761e92dc462f1ba7_Health-Quarters_Exteriors_005__1614037006_193.107.176.172.jpg" alt="">
-            </div>
-        </div> -->
-    </div>
+    </section>
+    
     <script src="/libs/jquery-3.6.0.min.js"></script>
     <script src="/libs/jquery.animateTyping.js"></script>
     <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/libs/slick/slick.js"></script>
-    <script src="/libs/slick/slick-theme.css"></script>
+    <script type="text/javascript" src="/libs/slick/slick.min.js"></script>
+    <script src="/libs/sal-master/sal-master/dist/sal.js"></script>
     <!-- <script src="/libs/fullPage.js-master/fullPage.js-master/vendors/easings.min.js"></script> -->
     <!-- <script type="text/javascript" src="/libs/fullPage.js-master/fullPage.js-master/dist/fullpage.js"></script> -->
     <script src="main.js"></script>
